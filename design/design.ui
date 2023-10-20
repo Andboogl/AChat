@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>453</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>AChat</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>641</width>
+      <height>481</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Чат</string>
+     </attribute>
+     <widget class="QTextBrowser" name="textBrowser">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>631</width>
+        <height>281</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTextBrowser {
+	border-radius: 10px;
+	background: white;
+	color: black;
+	padding-left: 5px;
+	padding-top: 5px;
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>Тут будуть ваші повідомлення та повідомлення інших користувачів</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="user_message">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>290</y>
+        <width>631</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+	border-radius: 10px;
+	background: white;
+	color: black;
+	padding-left: 5px;
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>Введіть повідомлення</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="send_message_btn">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>350</y>
+        <width>311</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	border-radius: 10px;
+	background: gray;
+}</string>
+      </property>
+      <property name="text">
+       <string>Відправити</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="quit_from_chat">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>350</y>
+        <width>301</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	border-radius: 10px;
+	background: gray;
+}</string>
+      </property>
+      <property name="text">
+       <string>Вийти з  чату</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Налаштування</string>
+     </attribute>
+     <widget class="QLineEdit" name="server_ip">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>631</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+	border-radius: 10px;
+	background: white;
+	color: black;
+	padding-left: 5px;
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>IP сервера</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="server_port">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>60</y>
+        <width>631</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+	border-radius: 10px;
+	background: white;
+	color: black;
+	padding-left: 5px;
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>Порт сервера</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="user_nikname">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>120</y>
+        <width>631</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+	border-radius: 10px;
+	background: white;
+	color: black;
+	padding-left: 5px;
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>Ваш нікнейм</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="save_settings_btn">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>180</y>
+        <width>311</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	border-radius: 10px;
+	background: gray;
+}</string>
+      </property>
+      <property name="text">
+       <string>Зберегти налаштування</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="connect_to_server_btn">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>180</y>
+        <width>311</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	border-radius: 10px;
+	background: gray;
+}</string>
+      </property>
+      <property name="text">
+       <string>Підключитися до сервера</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
